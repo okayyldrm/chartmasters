@@ -43,7 +43,7 @@ const features = [
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
-<nav className="sticky top-0 z-50 border-b border-white/10 bg-black/70 shadow-[0_8px_30px_rgba(0,0,0,0.35)] backdrop-blur-2xl">        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
+<nav className="sticky top-0 z-50 border-b border-white/10 bg-black/70 shadow-[0_8px_30px_rgba(0,0,0,0.35)] backdrop-blur-md">        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
           <a
   href="#"
   className="group flex items-center gap-3 text-2xl font-bold tracking-tight"
@@ -85,9 +85,9 @@ export default function Home() {
       </nav>
 
       <section className="cm-grid-background relative overflow-hidden">
-<div className="cm-glow-one pointer-events-none absolute -left-24 top-20 h-80 w-80 rounded-full bg-emerald-500/20 blur-[120px]" />
+<div className="cm-glow-one pointer-events-none absolute -left-24 top-20 h-80 w-80 rounded-full bg-emerald-500/20 blur-[40px]" />
 
-<div className="cm-glow-two pointer-events-none absolute -right-24 top-40 h-96 w-96 rounded-full bg-cyan-500/30 blur-[140px]" />
+<div className="cm-glow-two pointer-events-none absolute -right-24 top-40 h-96 w-96 rounded-full bg-cyan-500/30 blur-[40px]" />
 
 <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-black" />
         <div className="relative mx-auto flex min-h-[85vh] max-w-7xl flex-col items-center justify-center px-6 py-24 text-center">
@@ -108,7 +108,7 @@ export default function Home() {
 
 <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">            <a
   href="#community"
-  className="group inline-flex items-center justify-center gap-2 rounded-full bg-emerald-400 px-8 py-4 font-semibold text-black shadow-[0_0_35px_rgba(16,185,129,0.22)] transition duration-300 hover:-translate-y-1 hover:bg-emerald-300 hover:shadow-[0_0_50px_rgba(16,185,129,0.35)]"
+  className="group inline-flex items-center justify-center gap-2 rounded-full bg-emerald-400 px-8 py-4 font-semibold text-black shadow-[0_0_35px_rgba(16,185,129,0.22)] transition duration-300 hover:-translate-y-1 hover:bg-emerald-300 hover:shadow-lg"
 >
   Topluluğa Katıl
 </a>
@@ -148,9 +148,9 @@ export default function Home() {
         className="border-t border-white/10 bg-zinc-950 px-6 py-24"
       >
           <div className="relative mx-auto max-w-7xl">
-          <div className="pointer-events-none absolute -left-40 top-0 h-96 w-96 rounded-full bg-emerald-500/10 blur-[140px]" />
+          <div className="pointer-events-none absolute -left-40 top-0 h-96 w-96 rounded-full bg-emerald-500/10 blur-[40px]" />
 
-          <div className="pointer-events-none absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-blue-500/10 blur-[140px]" />
+          <div className="pointer-events-none absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-blue-500/10 blur-[40px]" />
           <div className="mx-auto max-w-3xl text-center">
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-emerald-400">
               Chartmasters Ekosistemi
@@ -169,7 +169,7 @@ export default function Home() {
             {features.map((feature) => (
               <div
                 key={feature.title}
-className="group relative overflow-hidden rounded-3xl border border-white/10 bg-black p-7 transition duration-300 hover:-translate-y-2 hover:border-emerald-400/50 hover:shadow-[0_20px_60px_rgba(16,185,129,0.12)]"              >
+className="group relative overflow-hidden rounded-3xl border border-white/10 bg-black p-7 transition duration-300 hover:-translate-y-2 hover:border-emerald-400/50 hover:shadow-xl"              >
                 <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-emerald-400/20 bg-emerald-400/10 text-2xl">
                   {feature.icon}
                 </div>
@@ -236,7 +236,7 @@ className="group relative overflow-hidden rounded-3xl border border-white/10 bg-
     </div>
 
     <div className="relative">
-      <div className="absolute inset-0 rounded-[2rem] bg-emerald-500/20 blur-3xl" />
+      <div className="absolute inset-0 rounded-[2rem] bg-emerald-500/20 blur-xl" />
 
       <div className="relative rounded-[2rem] border border-white/10 bg-zinc-950 p-6 shadow-2xl">
         <div className="flex items-center justify-between border-b border-white/10 pb-5">
