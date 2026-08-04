@@ -1,3 +1,4 @@
+import IntroScreen from "./components/intro-screen";
 import MarketBar from "./components/MarketBar";
 import PerformanceBar from "./components/PerformanceBar";
 
@@ -43,6 +44,7 @@ const features = [
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
+      <IntroScreen />
 <nav className="sticky top-0 z-50 border-b border-white/10 bg-black/70 shadow-[0_8px_30px_rgba(0,0,0,0.35)] backdrop-blur-md">        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
           <a
   href="#"
@@ -141,6 +143,31 @@ export default function Home() {
           </div>
         </div>
       </section>
+<section className="border-y border-white/10 bg-black">
+  <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-8 gap-y-4 px-6 py-5">
+    <div className="flex items-center gap-3">
+      <span className="h-3 w-3 animate-pulse rounded-full bg-emerald-400" />
+
+      <span className="text-sm font-bold tracking-[0.2em] text-emerald-400">
+        CHARTMASTERS LIVE
+      </span>
+    </div>
+
+    {[
+      { title: "CM NEWS", value: "ACTIVE" },
+      { title: "SIGNAL BOT", value: "ONLINE" },
+      { title: "MARKET DATA", value: "LIVE" },
+      { title: "SOCIAL REACH", value: "120K+" },
+    ].map((item) => (
+      <div key={item.title} className="flex items-center gap-2 text-sm">
+        <span className="h-2 w-2 animate-pulse rounded-full bg-emerald-400" />
+        <span className="text-zinc-500">{item.title}</span>
+        <span className="font-semibold text-white">{item.value}</span>
+      </div>
+    ))}
+  </div>
+</section>
+
 <MarketBar />
 <PerformanceBar />
       <section
