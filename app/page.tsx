@@ -1,4 +1,3 @@
-import IntroScreen from "./components/intro-screen";
 import MarketBar from "./components/MarketBar";
 import PerformanceBar from "./components/PerformanceBar";
 
@@ -44,15 +43,20 @@ const features = [
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
-      <IntroScreen />
 <nav className="sticky top-0 z-50 border-b border-white/10 bg-black/70 shadow-[0_8px_30px_rgba(0,0,0,0.35)] backdrop-blur-md">        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
           <a
   href="#"
   className="group flex items-center gap-3 text-2xl font-bold tracking-tight"
 >
-  <span className="flex h-10 w-10 items-center justify-center rounded-xl border border-emerald-400/20 bg-emerald-400/10 text-sm font-black text-emerald-400 transition group-hover:scale-105 group-hover:border-emerald-400/40">
-    CM
-  </span>
+  <video
+  autoPlay
+  loop
+  muted
+  playsInline
+  className="h-12 w-12 rounded-xl object-cover"
+>
+  <source src="/chartmasters-intro.mp4" type="video/mp4" />
+</video>
 
   <span>
     CHART<span className="text-emerald-400">MASTERS</span>
